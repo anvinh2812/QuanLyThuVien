@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1300.0" stylesheets="@../../Interface/TrangChu.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="QuanLyThuVien.QuanLyThuVien.SachController">
+   <children>
+      <VBox prefHeight="750.0" prefWidth="78.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <AnchorPane fx:id="side_anchorpane" prefHeight="750.0" prefWidth="78.0" styleClass="menu" stylesheets="@../../Interface/TrangChu.css">
+               <children>
+                  <Button layoutX="2.0" layoutY="142.0" mnemonicParsing="false" onAction="#HomeAdmin" prefHeight="50.0" prefWidth="59.0" styleClass="button1" stylesheets="@../../Interface/TrangChu.css">
+                     <graphic>
+                        <ImageView fitHeight="51.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Image/img/Screenshot_2023-05-13_145216-removebg-preview.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="2.0" layoutY="293.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="59.0" styleClass="button1" stylesheets="@../../Interface/TrangChu.css">
+                     <graphic>
+                        <ImageView fitHeight="51.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Image/img/Screenshot_2023-05-13_145857-removebg-preview.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="2.0" layoutY="215.0" mnemonicParsing="false" onAction="#DocGia" prefHeight="50.0" prefWidth="51.0" styleClass="button1" stylesheets="@../../Interface/TrangChu.css">
+                     <graphic>
+                        <ImageView fitHeight="51.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Image/img/Screenshot_2023-05-13_145157-removebg-preview.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="2.0" layoutY="659.0" mnemonicParsing="false" onAction="#LogOut" prefHeight="50.0" prefWidth="50.0" styleClass="button1" stylesheets="@../../Interface/TrangChu.css">
+                     <graphic>
+                        <ImageView fitHeight="51.0" fitWidth="43.0" onDragDetected="#LogOut" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Image/img/Screenshot_2023-05-17_161916-removebg-preview.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="2.0" layoutY="375.0" mnemonicParsing="false" onAction="#Admin" prefHeight="50.0" prefWidth="51.0" styleClass="button1" stylesheets="@../../Interface/TrangChu.css">
+                     <graphic>
+                        <ImageView fitHeight="51.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Image/img/Screenshot_2023-06-02_004754-removebg-preview.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="2.0" layoutY="457.0" mnemonicParsing="false" onAction="#ThongKe" prefHeight="50.0" prefWidth="51.0" styleClass="button1" stylesheets="@../../Interface/TrangChu.css">
+                     <graphic>
+                        <ImageView fitHeight="51.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Image/img/Screenshot_2023-06-02_152323-removebg-preview.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <AnchorPane layoutX="61.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1250.0" styleClass="backGround" stylesheets="@Style.css">
+         <children>
+            <HBox alignment="CENTER" layoutX="2.0" layoutY="8.0" prefHeight="60.0" prefWidth="1250.0" styleClass="container">
+               <children>
+                  <Label alignment="CENTER" prefHeight="58.0" prefWidth="111.0" styleClass="Label-Header" text="SÁCH" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <AnchorPane layoutX="1.0" layoutY="74.0" prefHeight="362.0" prefWidth="1250.0">
+               <children>
+                  <AnchorPane layoutX="218.0" layoutY="11.0" prefHeight="350.0" prefWidth="642.0" styleClass="container" visible="false">
+                     <children>
+                        <HBox layoutX="34.0" layoutY="7.0" prefHeight="36.0" prefWidth="262.0" />
+                        <AnchorPane layoutX="11.0" layoutY="81.0" prefHeight="144.0" prefWidth="111.0">
+                           <children>
+                              <ImageView fx:id="ttct_AnhSach" fitHeight="144.0" fitWidth="111.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true" />
+                           </children>
+                           <styleClass>
+                              <String fx:value="container" />
+                              <String fx:value="shadow" />
+                           </styleClass>
+                        </AnchorPane>
+                        <Label fx:id="ttct_MaSach" layoutX="240.0" layoutY="56.0" text="Mã Sách" textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="ttct_TenSach" layoutX="233.0" layoutY="85.0" prefHeight="58.0" prefWidth="297.0" text="Tên Sách" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="ttct_MaTacGia" layoutX="242.0" layoutY="155.0" text="Mã Tác Giả" textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="ttct_MaTheLoai" layoutX="251.0" layoutY="217.0" prefHeight="22.0" prefWidth="90.0" text="Mã Thể Loại" textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="ttct_MaNXB" layoutX="222.0" layoutY="188.0" text="Mã NXB" textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="ttct_SoLuong" layoutX="89.0" layoutY="266.0" prefHeight="22.0" prefWidth="78.0" text="Số Lượng" textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="ttct_NamXB" layoutX="83.0" layoutY="234.0" prefHeight="22.0" prefWidth="66.0" text="Năm XB" textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="144.0" layoutY="56.0" text="Mã Sách: " textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="144.0" layoutY="85.0" prefHeight="58.0" prefWidth="71.0" text="Tên Sách: " textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="145.0" layoutY="155.0" text="Mã Tác Giả: " textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="148.0" layoutY="188.0" text="Mã NXB: " textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="143.0" layoutY="217.0" prefHeight="22.0" prefWidth="90.0" text="Mã Thể Loại:" textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="11.0" layoutY="266.0" text="Số Lượng:" textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="233.0" text="Năm XB:" textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Line endX="102.20001220703125" endY="219.60000610351562" layoutX="41.0" layoutY="40.0" startX="102.20001220703125" startY="16.599990844726562" />
+                        <Line endX="86.79998779296875" endY="270.3999938964844" layoutX="256.0" layoutY="-15.0" startX="86.79998779296875" startY="158.39999389648438" />
+                        <Label alignment="TOP_CENTER" layoutX="105.0" layoutY="7.0" prefHeight="36.0" prefWidth="321.0" styleClass="container" text="THÔNG TIN SÁCH" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="343.0" layoutY="154.0" prefHeight="22.0" prefWidth="86.0" text="Tên Tác Giả:" textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="ttct_TenTacGia" layoutX="429.0" layoutY="157.0" text="TTG" />
+                        <Label layoutX="343.0" layoutY="188.0" text="Tên NXB:" textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="ttct_TenNXB" layoutX="413.0" layoutY="190.0" text="TNXB" />
+                        <Label layoutX="341.0" layoutY="217.0" text="Tên Thể Loại:" textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="ttct_TenTheLoai" layoutX="451.0" layoutY="217.0" prefHeight="22.0" prefWidth="78.0" text="TTl" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="ttct_NgayNhap" layoutX="256.0" layoutY="247.0" text="Label" />
+                        <Label layoutX="153.0" layoutY="246.0" text="Ngày Nhập" textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="12.0" layoutY="3.0" prefHeight="350.0" prefWidth="845.0" styleClass="container">
+                     <children>
+                        <HBox alignment="CENTER" layoutX="173.0" layoutY="6.0" prefHeight="36.0" prefWidth="448.0" styleClass="container">
+                           <children>
+                              <Label alignment="TOP_CENTER" prefHeight="46.0" prefWidth="448.0" styleClass="Label-Content" text="CÁC CHỨC NĂNG" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <AnchorPane layoutX="-1.0" layoutY="44.0" minHeight="0.0" minWidth="0.0" prefHeight="239.0" prefWidth="846.0">
+                           <children>
+                              <TextField fx:id="NhapSach_MaSach" layoutX="151.0" layoutY="16.0" prefHeight="26.0" prefWidth="155.0" promptText="Mã Sách" />
+                              <TextField fx:id="NhapSach_TenSach" layoutX="494.0" layoutY="14.0" prefHeight="30.0" prefWidth="155.0" promptText="Tên Sách" />
+                              <TextField fx:id="NhapSach_NamXB" layoutX="151.0" layoutY="108.0" prefHeight="26.0" prefWidth="155.0" promptText="Năm Xuất Bản" />
+                              <TextField fx:id="NhapSach_SoLuong" layoutX="151.0" layoutY="154.0" prefHeight="26.0" prefWidth="155.0" promptText="Số Lượng Sách" />
+                              <Label alignment="CENTER" layoutX="37.0" layoutY="14.0" prefHeight="30.0" prefWidth="98.0" styleClass="Label-Mini-Content" text="Mã Sách" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="382.0" layoutY="15.0" prefHeight="27.0" prefWidth="98.0" styleClass="Label-Mini-Content" text="Tên Sách" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="44.0" layoutY="63.0" prefHeight="27.0" prefWidth="98.0" styleClass="Label-Mini-Content" text="Mã Tác Giả" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="34.0" layoutY="107.0" prefHeight="27.0" prefWidth="98.0" styleClass="Label-Mini-Content" text="Năm XB" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="382.0" layoutY="59.0" prefHeight="27.0" prefWidth="98.0" styleClass="Label-Mini-Content" text="Mã NXB" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="40.0" layoutY="153.0" prefHeight="27.0" prefWidth="98.0" styleClass="Label-Mini-Content" text="Số Lượng" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="391.0" layoutY="107.0" prefHeight="27.0" prefWidth="98.0" styleClass="Label-Mini-Content" text="Ngày Nhập" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <DatePicker fx:id="NhapSach_NgayNhap" layoutX="494.0" layoutY="108.0" prefHeight="26.0" prefWidth="155.0" promptText="dd/mm/yyyy" />
+                              <Line endX="100.99996948242188" endY="188.39999389648438" layoutX="255.0" layoutY="21.0" startX="101.0" startY="-12.0" />
+                              <Label alignment="CENTER" layoutX="41.0" layoutY="200.0" prefHeight="26.0" prefWidth="90.0" styleClass="Label-Mini-Content" text="Thể Loại" textFill="WHITE" visible="false">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="NhapSach_ChonTheLoai" editable="true" layoutX="149.0" layoutY="201.0" prefHeight="26.0" prefWidth="155.0" promptText="Tên Thể Loại" styleClass="combo-box" visible="false" />
+                              <ComboBox fx:id="NhapSach_ChonMaTacGia" editable="true" layoutX="150.0" layoutY="63.0" prefHeight="26.0" prefWidth="155.0" promptText="Mã Tác Giả" styleClass="combo-box" />
+                              <ComboBox fx:id="NhapSach_ChonMaNXB" editable="true" layoutX="494.0" layoutY="61.0" prefWidth="155.0" promptText="Chọn Mã NXB" styleClass="combo-box" />
+                              <Label layoutX="395.0" layoutY="162.0" styleClass="Label-Mini-Content" text="Mã Thể Loại" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="NhapSach_ChonMaTheLoai" editable="true" layoutX="493.0" layoutY="160.0" prefWidth="155.0" promptText="Chọn Mã Thể Loại" styleClass="combo-box" />
+                              <Button fx:id="Button_ThemNXB" layoutX="683.0" layoutY="9.0" mnemonicParsing="false" onAction="#MoThemNXB" prefHeight="46.0" prefWidth="139.0" text="Thêm + Xem NXB" />
+                              <Line endX="101.0" endY="201.60000610351562" layoutX="563.0" layoutY="15.0" startX="101.0" startY="-12.0" />
+                              <Button fx:id="Button_ThemTacGia" layoutX="683.0" layoutY="170.0" mnemonicParsing="false" onAction="#MoThemTacGia" prefHeight="46.0" prefWidth="139.0" text="Thêm + Xem Tác Giả" />
+                              <Button fx:id="XemTheLoai" layoutX="683.0" layoutY="89.0" mnemonicParsing="false" onMouseClicked="#MoXemTheLoai" prefHeight="46.0" prefWidth="139.0" text="Thêm + Xem Thể Loại" wrapText="true" />
+                           </children>
+                        </AnchorPane>
+                        <HBox layoutX="80.0" layoutY="291.0" prefHeight="58.0" prefWidth="551.0" styleClass="HBox">
+                           <children>
+                              <Button fx:id="BTN_ThemSach" mnemonicParsing="false" onMouseClicked="#ThemSach" prefHeight="46.0" prefWidth="98.0" text="Thêm" />
+                              <Button fx:id="BTN_SuaSach" mnemonicParsing="false" onMouseClicked="#SuaSach" prefHeight="46.0" prefWidth="98.0" text="Sửa" />
+                              <Button fx:id="BTN_XoaSach" mnemonicParsing="false" onMouseClicked="#XoaSach" prefHeight="46.0" prefWidth="98.0" text="Xóa" />
+                              <Button fx:id="BTN_HuySach" mnemonicParsing="false" onMouseClicked="#HuySach" prefHeight="46.0" prefWidth="98.0" text="Hủy" />
+                           </children>
+                        </HBox>
+                        <Button fx:id="Button_LamMoi" layoutX="706.0" layoutY="293.0" mnemonicParsing="false" onAction="#LamMoi" prefHeight="46.0" prefWidth="90.0" text="Làm Mới" />
+                     </children>
+                  </AnchorPane>
+                  <Pane layoutX="876.0" layoutY="6.0" prefHeight="350.0" prefWidth="351.0" styleClass="container">
+                     <children>
+                        <ScrollPane layoutX="17.0" layoutY="51.0" prefHeight="288.0" prefWidth="322.0">
+                           <content>
+                              <VBox fx:id="Card_Layout" prefHeight="308.0" prefWidth="303.0" styleClass="VBox" />
+                           </content>
+                        </ScrollPane>
+                        <Label alignment="TOP_CENTER" layoutX="28.0" layoutY="7.0" prefHeight="36.0" prefWidth="298.0" styleClass="container" text="Sách Đã Thêm Gần Đây" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+            <Pane layoutY="437.0" prefHeight="40.0" prefWidth="1250.0" styleClass="container">
+               <children>
+                  <Label layoutX="355.0" layoutY="2.0" prefHeight="36.0" prefWidth="350.0" styleClass="Label-Content" text="THÔNG TIN SÁCH HIỆN CÓ" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets top="100.0" />
+                     </opaqueInsets>
+                  </Label>
+                  <TextField fx:id="TimKiem_Sach" layoutX="857.0" layoutY="5.0" prefHeight="30.0" prefWidth="246.0" promptText="Tìm Kiếm" styleClass="shadow">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </Pane>
+            <TableView fx:id="BangSach" layoutX="25.0" layoutY="485.0" onMouseClicked="#ChonSach_TTCT" prefHeight="230.0" prefWidth="1200.0" styleClass="container">
+               <columns>
+                  <TableColumn fx:id="cMaSach" editable="false" maxWidth="80.0" minWidth="40.799988746643066" prefWidth="67.19999122619629" sortable="false" text="Mã Sách" />
+                  <TableColumn fx:id="cTenSach" editable="false" maxWidth="270.40000915527344" minWidth="0.0" prefWidth="187.99993133544922" sortable="false" text="Tên Sách" />
+                  <TableColumn fx:id="cMaTacGia" editable="false" maxWidth="136.00003051757812" minWidth="0.0" prefWidth="117.60009765625" sortable="false" text="Mã Tác Giả" />
+                  <TableColumn fx:id="cTenTacGia" minWidth="2.4000244140625" prefWidth="141.066650390625" text="Ten TG" />
+                  <TableColumn fx:id="cMaTheLoai" editable="false" minWidth="0.0" prefWidth="77.60003662109375" sortable="false" text="Mã Thể Loại" />
+                  <TableColumn fx:id="cTenTheLoai" prefWidth="185.5999755859375" text="Tên Thể Loại" />
+                  <TableColumn fx:id="cMaNXB" editable="false" maxWidth="282.3999938964844" prefWidth="85.60003662109375" sortable="false" text="Mã NXB" />
+                  <TableColumn fx:id="cSoLuong" editable="false" maxWidth="211.199951171875" minWidth="0.0" prefWidth="114.39996337890625" sortable="false" text="Số Lượng" />
+                  <TableColumn fx:id="cNamXB" editable="false" minWidth="0.0" prefWidth="79.19989013671875" text="Năm XB" />
+                  <TableColumn fx:id="cNgayNhap" prefWidth="145.60009765625" text="Ngày Nhập" />
+               </columns>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

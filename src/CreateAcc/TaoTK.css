@@ -1,0 +1,64 @@
+.body{
+    -fx-background-color: radial-gradient(center 50% 50%, radius 50%, #b99b81, #b69276, #a8876b);
+}
+
+.body_mid{
+    -fx-backGround-color: rgba(255, 255, 255, .15);
+    -fx-border-color: rgba(255, 255, 255, .15);
+        -fx-border-width: 1px 1px 1px 1px;
+        -fx-border-radius: 10px;
+        -fx-background-radius: 10px;
+        -fx-border-style: solid;
+}
+
+.button_DK{
+    -fx-background-color:#a8876b;
+             -fx-background-radius: 20;
+             -fx-background-insets: 0,1,2,3,0;
+             -fx-text-fill: white;
+             -fx-font-weight: bold;
+}
+
+.button_DK:hover{
+    -fx-text-fill: white;
+        -fx-background-color:#a8876b;
+        -fx-font-size: 15px;
+         -fx-opacity: 0.8;
+          -fx-font-weight:bold;
+}
+
+.button_DK:pressed{
+    -fx-text-fill: white;
+           -fx-font-weight: bold;
+          /*-fx-padding: 10 15 13 15;*/
+          -fx-background-insets: 2 0 0 0,2 0 3 0,2 0 4 0,2 0 5 0;
+}
+
+.button_DN{
+    -fx-background-color:#a8876b;
+             -fx-background-radius: 20;
+             -fx-background-insets: 0,1,2,3,0;
+             -fx-text-fill: white;
+             -fx-font-weight: bold;
+}
+
+.button_DN:hover{
+    -fx-text-fill: white;
+        -fx-background-color:#a8876b;
+        -fx-font-size: 14px;
+         -fx-opacity: 0.8;
+          -fx-font-weight:bold;
+}
+
+.button_DN:pressed{
+    -fx-text-fill: white;
+           -fx-font-weight: bold;
+          /*-fx-padding: 10 15 13 15;*/
+          -fx-background-insets: 2 0 0 0,2 0 3 0,2 0 4 0,2 0 5 0;
+}
+
+.textTK{
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 50px;
+
+}

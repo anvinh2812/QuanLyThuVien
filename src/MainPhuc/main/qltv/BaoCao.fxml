@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1250.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainPhuc.main.qltv.Controller2">
+    <children>
+        <TabPane prefHeight="740.0" prefWidth="960.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab fx:id="tab1" text="Home">
+               <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="backGround" stylesheets="@styles.css">
+                            <children>
+                        <VBox layoutX="2.0" prefHeight="714.0" prefWidth="1250.0">
+                           <children>
+                                      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="94.0" prefWidth="1255.0" styleClass="container" stylesheets="@styles.css" text="Báo cáo + Biểu đồ" textFill="#fffbfb">
+                                 <font>
+                                    <Font name="System Bold Italic" size="40.0" />
+                                 </font>
+                              </Label>
+                              <Pane prefHeight="611.0" prefWidth="1250.0">
+                                 <children>
+                                    <Label fx:id="Tongnvien" alignment="BOTTOM_RIGHT" layoutX="466.0" layoutY="171.0" prefHeight="40.0" prefWidth="80.0" text="||||||||||" textFill="#eaeaea">
+                                       <font>
+                                          <Font name="System Bold" size="28.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="407.0" layoutY="94.0" prefHeight="37.0" prefWidth="169.0" stylesheets="@styles.css" text="Tổng số nhân viên" textFill="#fffbfb">
+                                       <font>
+                                          <Font name="System Bold" size="19.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="200.0" fitWidth="218.0" layoutX="191.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../ThongKe/anh/librarian.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label fx:id="TongSoSachSauKhiMuon" layoutX="466.0" layoutY="382.0" prefHeight="45.0" prefWidth="81.0" text="||||||||||" textFill="#fffcfc">
+                                       <font>
+                                          <Font name="System Bold" size="28.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="241.0" fitWidth="289.0" layoutX="202.0" layoutY="273.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../ThongKe/anh/open-book.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="443.0" layoutY="295.0" prefHeight="37.0" prefWidth="169.0" stylesheets="@styles.css" text="Tổng số sách" textFill="#fffbfb">
+                                       <font>
+                                          <Font name="System Bold" size="19.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="216.0" fitWidth="238.0" layoutX="642.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../ThongKe/anh/reading.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="923.0" layoutY="75.0" prefHeight="37.0" prefWidth="169.0" stylesheets="@styles.css" text="Tổng số độc giả" textFill="#fffbfb">
+                                       <font>
+                                          <Font name="System Bold" size="19.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="TongDG" alignment="BOTTOM_RIGHT" layoutX="946.0" layoutY="142.0" prefHeight="40.0" prefWidth="84.0" text="||||||||||" textFill="#eaeaea">
+                                       <font>
+                                          <Font name="System Bold" size="28.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="904.0" layoutY="295.0" prefHeight="37.0" prefWidth="209.0" stylesheets="@styles.css" text="Tổng số Nhà Xuất Bản" textFill="#fffbfb">
+                                       <font>
+                                          <Font name="System Bold" size="19.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="TongNXB" alignment="BOTTOM_RIGHT" layoutX="967.0" layoutY="405.0" prefHeight="40.0" prefWidth="82.0" text="||||||||||" textFill="#eaeaea">
+                                       <font>
+                                          <Font name="System Bold" size="28.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="219.0" fitWidth="246.0" layoutX="662.0" layoutY="295.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../ThongKe/anh/publishing.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </VBox>
+                            </children>
+                        </AnchorPane>
+               </content>
+                </Tab>
+            <Tab fx:id="tab12" text="1. Số lượng sách còn lại sau khi mượn">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="514.0" prefWidth="814.0" styleClass="backGround" stylesheets="@styles.css">
+                     <children>
+                        <VBox layoutX="-1.0" layoutY="1.0" prefHeight="722.0" prefWidth="1250.0">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="94.0" prefWidth="1267.0" styleClass="container" stylesheets="@styles.css" text=" Số Lượng sách còn lại sau khi mượn" textFill="#fffbfb">
+                                 <font>
+                                    <Font name="System Bold Italic" size="40.0" />
+                                 </font>
+                              </Label>
+                              <LineChart fx:id="linechart" legendSide="TOP" legendVisible="false" prefHeight="624.0" prefWidth="1250.0" stylesheets="@styles.css">
+                                <xAxis>
+                                  <CategoryAxis side="BOTTOM" />
+                                </xAxis>
+                                <yAxis>
+                                  <NumberAxis side="LEFT" />
+                                </yAxis>
+                              </LineChart>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="tab11" text="2. Số lượng sách mượn theo thể loại">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField layoutX="226.0" layoutY="51.0" />
+                        <TextField layoutX="226.0" layoutY="89.0" />
+                        <TextField layoutX="226.0" layoutY="129.0" />
+                        <Button layoutX="275.0" layoutY="173.0" mnemonicParsing="false" text="Button" />
+                        <Label layoutX="156.0" layoutY="55.0" text="Label" />
+                        <Label layoutX="156.0" layoutY="93.0" text="Label" />
+                        <Label layoutX="156.0" layoutY="133.0" text="Label" />
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="721.0" prefWidth="1250.0" styleClass="backGround" stylesheets="@styles.css">
+                           <children>
+                              <HBox layoutX="-4.0" prefHeight="94.0" prefWidth="1250.0" styleClass="container" stylesheets="@styles.css">
+                                 <children>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="94.0" prefWidth="1259.0" text="Số Sách Mượn Theo Thể Loại" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold Italic" size="40.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <PieChart fx:id="piechartSoSach" labelLineLength="12.0" layoutX="-3.0" layoutY="94.0" prefHeight="626.0" prefWidth="1250.0" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+                <Tab fx:id="tab2" text="3. Số lượng sách được mượn nhiều nhất">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="backGround" stylesheets="@styles.css">
+                            <children>
+                        <VBox layoutX="413.0" layoutY="4.0" prefHeight="177.0" prefWidth="322.0">
+                           <children>
+                              <TableView fx:id="tableSachMuonNhieuNhat" prefHeight="172.0" prefWidth="322.0" styleClass="container" stylesheets="@styles.css">
+                                <columns>
+                                  <TableColumn fx:id="cotTenSach" minWidth="-Infinity" prefWidth="150.0" text="Tên sách" />
+                                  <TableColumn fx:id="cotTongSoLuotMuon" minWidth="-Infinity" prefWidth="130.0" text="Tổng số lượt mượn" />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </VBox>
+                        <HBox layoutX="11.0" layoutY="14.0" prefHeight="119.0" prefWidth="387.0" stylesheets="@styles.css">
+                           <children>
+                                      <Label alignment="TOP_CENTER" contentDisplay="CENTER" prefHeight="119.0" prefWidth="709.0" stylesheets="@styles.css" text="Sách được mượn nhiều nhất" textFill="#eaeaea">
+                                 <font>
+                                    <Font name="System Bold Italic" size="27.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Label alignment="CENTER" layoutX="594.0" layoutY="238.0" prefHeight="90.0" prefWidth="350.0" stylesheets="@styles.css" text="Tổng số sách đã trả" textFill="#f2f2f2">
+                           <font>
+                              <Font name="System Bold Italic" size="20.0" />
+                           </font>
+                        </Label>
+                        <TableView fx:id="tableSachDaTra" layoutX="637.0" layoutY="319.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="220.0" prefWidth="265.0">
+                           <columns>
+                              <TableColumn fx:id="cotTenSach_datra" prefWidth="110.0" text="Tên Sách" />
+                              <TableColumn fx:id="cotSach_datra" prefWidth="120.0" text="Sách đã trả" />
+                           </columns>
+                        </TableView>
+                        <Separator layoutY="231.0" prefHeight="14.0" prefWidth="1250.0" />
+                        <AnchorPane layoutX="14.0" layoutY="261.0" prefHeight="371.0" prefWidth="522.0" styleClass="container" stylesheets="@styles.css">
+                           <children>
+                              <TableView fx:id="tableSachDangMuon" layoutX="243.0" layoutY="4.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="182.0" prefWidth="278.0">
+                                 <columns>
+                                    <TableColumn fx:id="cotTenSach_dangmuon" prefWidth="110.0" text="Tên Sách" />
+                                    <TableColumn fx:id="cotSach_dangmuon" prefWidth="110.0" text="Sách đang mượn" />
+                                 </columns>
+                              </TableView>
+                              <Label alignment="CENTER" layoutX="2.0" layoutY="5.0" prefHeight="90.0" prefWidth="264.0" stylesheets="@styles.css" text="Tổng số sách mượn" textFill="#f2f2f2">
+                                 <font>
+                                    <Font name="System Bold Italic" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab fx:id="tab3" text="4. Số lượng sách theo Tác Giả">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="backGround" stylesheets="@styles.css">
+                            <children>
+                        <AnchorPane layoutX="1.0" layoutY="2.0" prefHeight="718.0" prefWidth="1250.0">
+                           <children>
+                              <BarChart fx:id="barchart" layoutX="-2.0" layoutY="105.0" legendVisible="false" prefHeight="609.0" prefWidth="1250.0" stylesheets="@styles.css">
+                                <xAxis>
+                                  <CategoryAxis side="BOTTOM" />
+                                </xAxis>
+                                <yAxis>
+                                  <NumberAxis side="LEFT" />
+                                </yAxis>
+                                 <styleClass>
+                                    <String fx:value="chart-series-line" />
+                                    <String fx:value="axis" />
+                                 </styleClass>
+                              </BarChart>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutY="7.0" prefHeight="94.0" prefWidth="1250.0" styleClass="container" stylesheets="@styles.css" text=" Số Lượng sách theo Tác Giả" textFill="#fffbfb">
+                                 <font>
+                                    <Font name="System Bold Italic" size="40.0" />
+                                 </font>
+                              </Label>
+                           </children></AnchorPane>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            <Tab fx:id="tab31" text="5. Số lượng sách Theo NXB ">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="backGround" stylesheets="@styles.css">
+                     <children>
+                        <AnchorPane layoutX="1.0" layoutY="2.0" prefHeight="721.0" prefWidth="1250.0">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutY="7.0" prefHeight="94.0" prefWidth="1250.0" styleClass="container" stylesheets="@styles.css" text=" Số Lượng Sách theo Nhà xuất bản" textFill="#fffbfb">
+                                 <font>
+                                    <Font name="System Bold Italic" size="40.0" />
+                                 </font>
+                              </Label>
+                              <BarChart fx:id="barchart_NXB" layoutX="-1.0" layoutY="101.0" legendVisible="false" prefHeight="623.0" prefWidth="1250.0" stylesheets="@styles.css">
+                                <xAxis>
+                                  <CategoryAxis side="BOTTOM" />
+                                </xAxis>
+                                <yAxis>
+                                  <NumberAxis side="LEFT" />
+                                </yAxis>
+                              </BarChart>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="tab311" text="6. Số trang từng quyển Sách">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="backGround" stylesheets="@styles.css">
+                     <children>
+                        <AnchorPane layoutX="1.0" layoutY="2.0" prefHeight="720.0" prefWidth="1250.0">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutY="7.0" prefHeight="94.0" prefWidth="1250.0" styleClass="container" stylesheets="@styles.css" text="Số trang theo từng quyển Sách" textFill="#fffbfb">
+                                 <font>
+                                    <Font name="System Bold Italic" size="40.0" />
+                                 </font>
+                              </Label>
+                              <AreaChart fx:id="areachart" layoutX="-4.0" layoutY="101.0" legendVisible="false" prefHeight="619.0" prefWidth="1258.0" stylesheets="@styles.css">
+                                <xAxis>
+                                  <CategoryAxis side="BOTTOM" />
+                                </xAxis>
+                                <yAxis>
+                                  <NumberAxis side="LEFT" />
+                                </yAxis>
+                              </AreaChart>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</StackPane>

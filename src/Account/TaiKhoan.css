@@ -1,0 +1,74 @@
+.body_mid{
+    -fx-backGround-color: linear-gradient(from 0% 0% to 70% 100%, #0277BD, #9C27B0);
+}
+
+.body_right{
+    -fx-backGround-color: #1C1C1C;
+}
+
+.buttonHS{
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 50%, rgba(25, 118, 210, 0.5), rgba(81, 45, 168, 0.5));
+    -fx-border-color: linear-gradient(from 0% 0% to 100% 50%, rgba(25, 118, 210, 0.5), rgba(81, 45, 168, 0.5));
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-border-style: solid;
+}
+
+.body{
+    -fx-background-color: radial-gradient(center 50% 50%, radius 50%, #b99b81, #b69276, #a8876b);
+}
+
+.pane{
+    -fx-backGround-color: rgba(255, 255, 255, 0.3);
+    -fx-backGround-radius: 20px;
+    -fx-text-fill: white;
+}
+
+.label_TK{
+    -fx-backGround-color: rgba(255, 255, 255, 0.3);
+}
+
+.text-input{
+    -fx-background-color: rgba(0,0,0,0);
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: #242551;
+}
+
+.button_DN{
+    -fx-background-color:#a8876b;
+        -fx-background-radius: 20;
+        -fx-background-insets: 0,1,2,3,0;
+        -fx-text-fill: white;
+        -fx-font-weight: bold;
+}
+
+.button_DN:hover {
+    -fx-text-fill: white;
+    -fx-background-color:#a8876b;
+    -fx-font-size: 16px;
+    -fx-opacity: 0.8;
+    -fx-font-weight:bold;
+}
+
+.button{
+    -fx-background-color:#a8876b;
+         -fx-background-radius: 20;
+         -fx-background-insets: 0,1,2,3,0;
+         -fx-text-fill: white;
+         -fx-font-weight: bold;
+}
+
+.button:hover {
+-fx-text-fill: white;
+    -fx-background-color:#a8876b;
+    -fx-font-size: 15px;
+     -fx-opacity: 0.8;
+      -fx-font-weight:bold;
+}
+.button:pressed{
+       -fx-text-fill: white;
+       -fx-font-weight: bold;
+      /*-fx-padding: 10 15 13 15;*/
+      -fx-background-insets: 2 0 0 0,2 0 3 0,2 0 4 0,2 0 5 0;
+}

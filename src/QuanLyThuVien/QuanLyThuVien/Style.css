@@ -1,0 +1,204 @@
+.backGround {
+ /* -fx-backGround-color: linear-gradient(from 0% 0% to 60% 80%, #0277BD, #9C27B0);*/
+    /*-fx-background-color:rgb(30, 136, 229);*/
+    -fx-backGround-color:#AE8E75;
+    -fx-text-fill: #70310d;
+}
+.container_miniscene {
+-fx-backGround-color: #a8876b;
+    -fx-backGround-radius: 20px;
+}
+.container {
+    -fx-backGround-color: rgba(255, 255, 255, 0.3);
+    -fx-backGround-radius: 20px;
+    -fx-text-fill: #70310d;
+}
+.container-nonebg {
+    -fx-backGround-color: rgba(255, 255, 255, 0);
+}
+.Label-Header {
+    -fx-alignment: center;
+   -fx-text-fill: #70310d;
+   -fx-font: bold italic 40px "System";
+}
+.Label-Content {
+    -fx-alignment: center;
+   -fx-text-fill: #70310d;
+   -fx-font:  bold 25px "System";
+}
+.Label-Mini-Content {
+   -fx-text-fill: white;
+   -fx-font: bold 15px "System";
+   -fx-wrap-text: true;
+}
+.Label-Brown-Text{
+    -fx-text-fill: #70310d;
+       -fx-font: bold 15px "System";
+       -fx-wrap-text: true;
+}
+.Lable-Brown-Text-light {
+    -fx-text-fill: #a8876b;
+           -fx-font: bold 15px "System";
+           -fx-wrap-text: true;
+
+}
+.shadow {
+    /*-fx-effect: dropShadow(three-pass-box, rgba(0, 0, 0, 0.3), 10, 0, 0, 10);*/
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 6,0,0,0);
+    }
+.transparent {
+    -fx-backGround-color: rgba(0, 0, 0, 0);
+}
+.button {
+    /*-fx-background-color: linear-gradient(from 0% 0% to 100% 50%, rgba(25, 118, 210, 0.5), rgba(81, 45, 168, 0.5));*/
+    -fx-background-color: #a8876b;
+    -fx-background-radius: 20;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    /*   -fx-background-color: rgba(78, 52, 46, 0.75); */
+        /*-fx-background-color: rgb(30, 136, 229);*/
+}
+/*.button-text {
+    -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 0, 0.0 , 0 , 1);
+    -fx-text-fill: #70310d;
+}*/
+.button:hover {
+ -fx-text-fill: white;
+/* -fx-background-color:
+             #000000,
+             linear-gradient(#7ebcea, #2f4b8f),
+             linear-gradient(#2196F3, #673AB7),
+             linear-gradient(from 0% 0% to 60% 80%, #0277BD, #9C27B0);*/
+             -fx-background-color:#a8876b;
+ -fx-opacity: 0.8;
+  -fx-font-weight:bold;
+             /*rgba(78, 52, 46, 0.75);*/
+ /*-fx-background-color:
+              #000000,
+              rgb(141, 110, 99),
+              rgb(141, 110, 99),
+              rgba(78, 52, 46, 0.75);
+     -fx-background-insets: 0,1,2,3;
+     -fx-background-radius: 20;
+     -fx-padding: 12 30 12 30;*/
+    /* -fx-text-fill: #70310d;
+     -fx-font-size: 12px;*/
+
+ }
+.button:pressed
+{
+     -fx-text-fill: white;
+     -fx-font-weight: bold;
+    /*-fx-padding: 10 15 13 15;*/
+    -fx-background-insets: 2 0 0 0,2 0 3 0,2 0 4 0,2 0 5 0;
+}
+
+.table-view {
+    -fx-background-radius: 20 20 0 0;
+    -fx-background-color: rgba(255, 255, 255, 0.3);
+    -fx-font-weight: bold;
+    -fx-text-fill: #70310d;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+    -fx-background-radius: 20 20 0 0;
+
+}
+.table-view .column-header, table-view .filler {
+    -fx-size: 40px;
+    -fx-background-color: transparent;
+    -fx-wrap-text: true;
+}
+.table-view .column-header .label {
+    -fx-text-fill: #70310d;
+    -fx-wrap-text: true;
+}
+.table-view .table-cell{
+   -fx-alignment: center;
+   -fx-text-fill: #70310d;
+   -fx-font: bold 12px "System";
+   -fx-wrap-text: true;
+}
+.table-row-cell {
+   -fx-background-color: rgba(255, 255, 255, 0.05);
+   -fx-wrap-text: true;
+   -fx-border-color: #666158;
+   -fx-border-width: 0.2;
+}
+.combo-box {
+    /*-fx-background-color: linear-gradient(from 0% 0% to 100% 50%, rgba(25, 118, 210, 0.5), rgba(81, 45, 168, 0.5));
+    -fx-background-radius: 20; */
+    -fx-background-color: transparent;
+    -fx-background-radius: 20px;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #70310d;
+    -fx-font-weight: bold;
+    -fx-effect: dropShadow(three-pass-box, rgba(255, 255, 255, 0.2), 5, 0.5, 0, 2);
+}
+.combo-box .text-field:hover {
+     -fx-text-fill:  white;
+     -fx-background-color: #666158;
+     /*-fx-background-color:
+                 #000000,
+                 linear-gradient(#7ebcea, #2f4b8f),
+                 linear-gradient(#2196F3, #673AB7),
+                 linear-gradient(from 0% 0% to 60% 80%, #0277BD, #9C27B0);*/
+     -fx-opacity: 0.8;
+}
+.combo-box .arrow-button:hover {
+     -fx-text-fill:  white;
+     -fx-background-color: #a8876b;
+     -fx-opacity: 0.8;
+}
+.combo-box .text-field:pressed
+{
+     -fx-text-fill:  white;
+     -fx-font-weight: bold;
+    /*-fx-padding: 10 15 13 15;*/
+    -fx-background-insets: 2 0 0 0,2 0 3 0,2 0 4 0,2 0 5 0;
+}
+.combo-box .arrow-button:pressed {
+     -fx-text-fill:  white;
+     -fx-font-weight: bold;
+    /*-fx-padding: 10 15 13 15;*/
+    -fx-background-insets: 2 0 0 0,2 0 3 0,2 0 4 0,2 0 5 0;
+}
+.combo-box .text-field {
+    /*-fx-background-color: linear-gradient(from 0% 0% to 100% 50%, rgba(25, 118, 210, 0.5), rgba(81, 45, 168, 0.5));*/
+    -fx-background-color: #a8876b;
+    -fx-background-radius: 20;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill:  white;
+    -fx-font-weight: bold;
+}
+.combo-box .arrow-button {
+  /*-fx-background-image: url("arrow.png"); */
+  /*-fx-background-color: linear-gradient(from 0% 0% to 100% 50%, rgba(25, 118, 210, 0.5), rgba(81, 45, 168, 0.5));*/
+  -fx-background-color: #a8876b;
+  -fx-background-radius: 20;
+  -fx-background-insets: 0,1,2,3,0;
+  -fx-text-fill:  white;
+}
+.combo-box .list-cell{
+    /*-fx-background-color: linear-gradient(from 0% 0% to 100% 50%, rgba(25, 118, 210, 0.5), rgba(81, 45, 168, 0.5));*/
+    -fx-background-color: #a8876b;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill:  white;
+    -fx-font-weight: bold;
+}
+
+.VBox {
+  -fx-spacing: 10; // khoảng cách giữa các phần tử là 10px
+  -fx-padding: 5px; // khoảng cách giữa nội dung và viền của button là 5px
+    -fx-border-insets: 5px; // khoảng cách giữa viền và nền của button là 5px
+    -fx-background-insets: 5px; // khoảng cách giữa nền và phần bên ngoài của button là 5px
+}
+.HBox {
+
+-fx-spacing: 50; // khoảng cách giữa các phần tử là 10px
+  -fx-padding: 5px; // khoảng cách giữa nội dung và viền của button là 5px
+    -fx-border-insets: 5px; // khoảng cách giữa viền và nền của button là 5px
+    -fx-background-insets: 5px; // khoảng cách giữa nền và phần bên ngoài của button là 5px
+}

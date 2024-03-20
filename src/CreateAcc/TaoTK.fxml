@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="643.0" prefWidth="950.0" styleClass="body" stylesheets="@TaoTK.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CreateAcc.TaoTK">
+   <children>
+      <AnchorPane layoutX="28.0" layoutY="48.0" prefHeight="546.0" prefWidth="468.0" styleClass="body_mid" stylesheets="@TaoTK.css">
+         <children>
+            <HBox layoutX="92.0" layoutY="237.0" prefHeight="35.0" prefWidth="289.0">
+               <children>
+                  <TextField fx:id="UserNameSignUp" prefHeight="34.0" prefWidth="292.0" promptText="Nhập Tài Khoản" styleClass="textTK" stylesheets="@TaoTK.css">
+                     <font>
+                        <Font name="Times New Roman Bold" size="14.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <Button fx:id="SignUp" layoutX="138.0" layoutY="443.0" mnemonicParsing="false" onAction="#ClickSignUp" prefHeight="37.0" prefWidth="200.0" styleClass="button_DK" stylesheets="@TaoTK.css" text="Đăng Ký" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Pane layoutX="92.0" layoutY="272.0" prefHeight="35.0" prefWidth="249.0">
+               <children>
+                  <Label layoutX="3.0" layoutY="-1.0" prefHeight="37.0" prefWidth="99.0" text="Mật Khẩu" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="92.0" layoutY="201.0" prefHeight="35.0" prefWidth="249.0">
+               <children>
+                  <Label layoutX="1.0" layoutY="-1.0" prefHeight="36.0" prefWidth="248.0" />
+                  <Label layoutX="2.0" prefHeight="36.0" prefWidth="123.0" text="Tài Khoản" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Label alignment="CENTER" layoutX="112.0" layoutY="77.0" prefHeight="74.0" prefWidth="250.0" text="Sign Up" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            <Pane layoutX="79.0" layoutY="375.0" prefHeight="58.0" prefWidth="311.0">
+               <children>
+                  <Label fx:id="MessageSignUp" alignment="CENTER" layoutX="1.0" layoutY="2.0" prefHeight="68.0" prefWidth="288.0" textFill="RED">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button layoutX="173.0" layoutY="489.0" mnemonicParsing="false" onAction="#ClickSignIn" prefHeight="35.0" prefWidth="130.0" styleClass="button_DN" stylesheets="@TaoTK.css" text="Đăng Nhập" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <CheckBox fx:id="showPasswordCheckboxSU" layoutX="258.0" layoutY="351.0" mnemonicParsing="false" onAction="#ShowPasswordSU" prefHeight="24.0" prefWidth="123.0" text="Hiện mật khẩu" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </CheckBox>
+            <TextField fx:id="TextPasswordSignUp" layoutX="92.0" layoutY="307.0" prefHeight="35.0" prefWidth="289.0" promptText="*********" styleClass="textMK" stylesheets="@TaoTK.css">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="PasswordSignUp" layoutX="93.0" layoutY="307.0" prefHeight="35.0" prefWidth="289.0" promptText="*********">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </PasswordField>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="652.0" fitWidth="430.0" layoutX="520.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/img/fce0f6027d2fcbbd232fddcd71873f03.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

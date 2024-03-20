@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox fx:id="box" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="307.0" prefWidth="175.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Interface.Menu">
+   <children>
+      <ImageView fx:id="BookImage" fitHeight="253.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/img/Bìa_sách_Harry_Potter_phần_6.jpg" />
+         </image>
+      </ImageView>
+      <VBox prefHeight="64.0" prefWidth="175.0">
+         <children>
+            <Label fx:id="NameBook" alignment="CENTER" prefHeight="22.0" prefWidth="175.0" text="Harry Potter Và Hoàng Tử Lai">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="authorName" prefHeight="24.0" prefWidth="175.0" text=" Tác Giả: J. K. Rowling" />
+         </children>
+      </VBox>
+   </children>
+</VBox>

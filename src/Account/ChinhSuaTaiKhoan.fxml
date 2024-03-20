@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="588.0" prefWidth="559.0" styleClass="body" stylesheets="@TaiKhoan.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Account.ChinhSuaTaiKhoan">
+   <children>
+      <Pane layoutX="14.0" layoutY="95.0" prefHeight="368.0" prefWidth="527.0" styleClass="pane" stylesheets="@TaiKhoan.css">
+         <children>
+            <Label layoutX="15.0" layoutY="23.0" prefHeight="65.0" prefWidth="180.0" text="Tên người dùng :" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="110.0" prefHeight="65.0" prefWidth="180.0" text="Email                   :" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="16.0" layoutY="194.0" prefHeight="65.0" prefWidth="180.0" text="SĐT                     :" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="200.0" layoutY="23.0" prefHeight="65.0" prefWidth="326.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="200.0" layoutY="110.0" prefHeight="65.0" prefWidth="326.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="190.0" layoutY="194.0" prefHeight="65.0" prefWidth="336.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="EditName" layoutX="259.0" layoutY="39.0" prefHeight="25.0" prefWidth="228.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></TextField>
+            <TextField fx:id="EditEmail" layoutX="259.0" layoutY="126.0" prefHeight="25.0" prefWidth="228.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></TextField>
+            <TextField fx:id="EditDate" layoutX="259.0" layoutY="210.0" prefHeight="25.0" prefWidth="228.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></TextField>
+         </children>
+      </Pane>
+      <Pane layoutX="14.0" layoutY="21.0" prefHeight="66.0" prefWidth="527.0" styleClass="pane" stylesheets="@TaiKhoan.css">
+         <children>
+            <Label alignment="CENTER" layoutX="83.0" layoutY="1.0" prefHeight="65.0" prefWidth="361.0" text="CHỈNH SỬA HỒ SƠ" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="17.0" layoutY="477.0" prefHeight="94.0" prefWidth="527.0" styleClass="pane" stylesheets="@TaiKhoan.css">
+         <children>
+            <Button layoutX="287.0" layoutY="27.0" mnemonicParsing="false" onAction="#CancelSetting" prefHeight="48.0" prefWidth="180.0" text="Huỷ">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="37.0" layoutY="27.0" mnemonicParsing="false" onAction="#SaveSetting" prefHeight="48.0" prefWidth="180.0" text="Lưu sửa hồ sơ">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

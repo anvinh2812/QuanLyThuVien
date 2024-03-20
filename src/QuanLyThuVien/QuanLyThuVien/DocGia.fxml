@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1300.0" stylesheets="@../../Interface/TrangChu.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="QuanLyThuVien.QuanLyThuVien.DocGiaController">
+   <children>
+      <VBox prefHeight="750.0" prefWidth="78.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <AnchorPane fx:id="side_anchorpane" prefHeight="750.0" prefWidth="78.0" styleClass="menu" stylesheets="@../../Interface/TrangChu.css">
+               <children>
+                  <Button layoutX="2.0" layoutY="142.0" mnemonicParsing="false" onAction="#HomeAdmin" prefHeight="50.0" prefWidth="59.0" styleClass="button1" stylesheets="@../../Interface/TrangChu.css">
+                     <graphic>
+                        <ImageView fitHeight="51.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Image/img/Screenshot_2023-05-13_145216-removebg-preview.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="2.0" layoutY="293.0" mnemonicParsing="false" onAction="#Books" prefHeight="50.0" prefWidth="59.0" styleClass="button1" stylesheets="@../../Interface/TrangChu.css">
+                     <graphic>
+                        <ImageView fitHeight="51.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Image/img/Screenshot_2023-05-13_145857-removebg-preview.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="2.0" layoutY="215.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="51.0" styleClass="button1" stylesheets="@../../Interface/TrangChu.css">
+                     <graphic>
+                        <ImageView fitHeight="51.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Image/img/Screenshot_2023-05-13_145157-removebg-preview.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="2.0" layoutY="659.0" mnemonicParsing="false" onAction="#LogOut" prefHeight="50.0" prefWidth="50.0" styleClass="button1" stylesheets="@../../Interface/TrangChu.css">
+                     <graphic>
+                        <ImageView fitHeight="51.0" fitWidth="43.0" onDragDetected="#LogOut" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Image/img/Screenshot_2023-05-17_161916-removebg-preview.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="2.0" layoutY="375.0" mnemonicParsing="false" onAction="#Admin" prefHeight="50.0" prefWidth="51.0" styleClass="button1" stylesheets="@../../Interface/TrangChu.css">
+                     <graphic>
+                        <ImageView fitHeight="51.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Image/img/Screenshot_2023-06-02_004754-removebg-preview.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="2.0" layoutY="457.0" mnemonicParsing="false" onAction="#ThongKe" prefHeight="50.0" prefWidth="51.0" styleClass="button1" stylesheets="@../../Interface/TrangChu.css">
+                     <graphic>
+                        <ImageView fitHeight="51.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Image/img/Screenshot_2023-06-02_152323-removebg-preview.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <AnchorPane layoutX="62.0" prefHeight="750.0" prefWidth="1245.0" styleClass="backGround" stylesheets="@Style.css">
+         <children>
+            <HBox layoutX="1.0" layoutY="14.0" prefHeight="66.0" prefWidth="1250.0" styleClass="container">
+               <children>
+                  <Label alignment="CENTER" prefHeight="66.0" prefWidth="1330.0" styleClass="Label-Header" text="Độc Giả" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="45.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <TableView fx:id="BangDocGia" editable="true" layoutX="26.0" layoutY="505.0" onMouseClicked="#ChonDocGia_TTCT" prefHeight="230.0" prefWidth="1200.0" styleClass="container">
+               <columns>
+                  <TableColumn fx:id="cMaDocGia" prefWidth="112.0" sortable="false" text="Mã Độc Giả" />
+                  <TableColumn fx:id="cTenDocGia" prefWidth="136.8000030517578" text="Tên Độc Giả" />
+                  <TableColumn fx:id="cSDTDG" prefWidth="156.0" text="Số Điện Thoại" />
+                  <TableColumn fx:id="cSoThe" prefWidth="208.800048828125" sortable="false" text="Số Thẻ" />
+                  <TableColumn fx:id="cEmailDG" prefWidth="206.39996337890625" text="Email" />
+                  <TableColumn fx:id="cGioiTinhDocGia" prefWidth="227.20001220703125" text="Giới Tính" />
+                  <TableColumn fx:id="cNgaySinhDG" prefWidth="151.99993896484375" text="Ngày Sinh" />
+               </columns>
+            </TableView>
+            <Pane layoutY="451.0" styleClass="container">
+               <children>
+                  <Label alignment="CENTER" prefHeight="40.0" prefWidth="1236.0" styleClass="Label-Content" text="Thông Tin Chung" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="TimKiem_DocGia" layoutX="938.0" layoutY="5.0" prefHeight="30.0" prefWidth="254.0" promptText="Tìm Kiếm" styleClass="shadow">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </Pane>
+            <AnchorPane fx:id="nav_form" layoutX="15.0" layoutY="96.0" prefHeight="334.0" prefWidth="777.0" styleClass="container">
+               <children>
+                  <AnchorPane layoutX="7.0" minHeight="0.0" minWidth="0.0" prefHeight="334.0" prefWidth="774.0">
+                     <children>
+                        <Label alignment="CENTER" layoutX="122.0" layoutY="7.0" prefHeight="38.0" prefWidth="542.0" styleClass="container" text="Chức Năng" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="NhapDocGia_TenDocGia" layoutX="535.0" layoutY="63.0" prefHeight="30.0" prefWidth="155.0" promptText="Tên Độc Giả" />
+                        <TextField fx:id="NhapDocGia_SoThe" layoutX="191.0" layoutY="105.0" prefHeight="30.0" prefWidth="155.0" promptText="Số Thẻ" />
+                        <TextField fx:id="NhapDocGia_EmailDG" layoutX="190.0" layoutY="202.0" prefHeight="30.0" prefWidth="155.0" promptText="Email" />
+                        <TextField fx:id="NhapDocGia_SDTDG" layoutX="191.0" layoutY="151.0" prefHeight="30.0" prefWidth="155.0" promptText="Số Điện Thoại" />
+                        <Label alignment="CENTER" layoutX="53.0" layoutY="61.0" prefHeight="30.0" prefWidth="98.0" styleClass="Label-Mini-Content" text="Mã Độc Giả" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="425.0" layoutY="65.0" prefHeight="27.0" prefWidth="98.0" styleClass="Label-Mini-Content" text="Tên Độc Giả" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="50.0" layoutY="105.0" prefHeight="27.0" prefWidth="98.0" styleClass="Label-Mini-Content" text="Số Thẻ" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="78.0" layoutY="206.0" styleClass="Label-Mini-Content" text="Email" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="44.0" layoutY="152.0" prefHeight="27.0" prefWidth="124.0" styleClass="Label-Mini-Content" text="Số Điện Thoại" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="425.0" layoutY="167.0" prefHeight="27.0" prefWidth="98.0" styleClass="Label-Mini-Content" text="Ngày Sinh" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <DatePicker fx:id="NhapDocGia_NgaySinhDG" layoutX="538.0" layoutY="165.0" prefHeight="30.0" prefWidth="155.0" promptText="dd/mm/yyyy" />
+                        <TextField fx:id="NhapDocGia_MaDocGia" layoutX="191.0" layoutY="61.0" prefHeight="30.0" prefWidth="155.0" promptText="Mã Độc Giả" />
+                        <AnchorPane layoutX="132.0" layoutY="255.0" prefHeight="54.0" prefWidth="524.0">
+                           <children>
+                              <Button fx:id="BTN_ThemDocGia" layoutX="6.0" layoutY="5.0" mnemonicParsing="false" onMouseClicked="#ThemDocGia" prefHeight="47.0" prefWidth="111.0" text="Thêm" />
+                              <Button fx:id="BTN_SuaDocGia" layoutX="133.0" layoutY="5.0" mnemonicParsing="false" onMouseClicked="#SuaDocGia" prefHeight="47.0" prefWidth="111.0" text="Sửa" />
+                              <Button fx:id="BTN_XoaDocGia" layoutX="265.0" layoutY="5.0" mnemonicParsing="false" onMouseClicked="#XoaDocGia" prefHeight="47.0" prefWidth="111.0" text="Xóa" />
+                              <Button fx:id="BTN_HuyDocGia" layoutX="404.0" layoutY="5.0" mnemonicParsing="false" onMouseClicked="#HuyDocGia" prefHeight="47.0" prefWidth="111.0" text="Hủy" />
+                           </children>
+                        </AnchorPane>
+                        <Line endX="-3.20001220703125" endY="176.79998779296875" layoutX="399.0" layoutY="61.0" startX="-3.20001220703125" startY="-2.4000091552734375" />
+                        <Label layoutX="450.0" layoutY="116.0" styleClass="Label-Mini-Content" text="Giới Tính" />
+                        <ChoiceBox fx:id="NhapDocGia_GioiTinhDocGia" layoutX="537.0" layoutY="114.0" onMouseClicked="#ChonGioiTinh" prefHeight="30.0" prefWidth="155.0" styleClass="button" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <Pane layoutX="821.0" layoutY="98.0" prefHeight="334.0" prefWidth="404.0" styleClass="container">
+               <children>
+                  <ScrollPane layoutX="17.0" layoutY="51.0" prefHeight="274.0" prefWidth="361.0">
+                     <content>
+                        <VBox fx:id="Card_LayoutDocGia" prefHeight="295.0" prefWidth="342.0" styleClass="VBox" />
+                     </content>
+                  </ScrollPane>
+                  <Label alignment="CENTER" layoutX="60.0" layoutY="7.0" prefHeight="36.0" prefWidth="298.0" styleClass="container" text="Độc Giả Đã Thêm Gần Đây" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

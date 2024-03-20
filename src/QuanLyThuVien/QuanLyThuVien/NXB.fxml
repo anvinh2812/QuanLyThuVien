@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="372.0" prefWidth="875.0" styleClass="backGround" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="QuanLyThuVien.QuanLyThuVien.NhaXuatBanController">
+   <children>
+      <Pane layoutX="15.0" layoutY="38.0" prefHeight="302.0" prefWidth="293.0" styleClass="container">
+         <children>
+            <TextField fx:id="NhapNXB_TenNXB" layoutX="134.0" layoutY="69.0" prefHeight="35.0" prefWidth="132.0" promptText="Tên NXB" />
+            <TextField fx:id="NhapNXB_MaNXB" layoutX="134.0" layoutY="19.0" prefHeight="35.0" prefWidth="132.0" promptText="Mã NXB" />
+            <Label layoutX="34.0" layoutY="79.0" styleClass="Label-Brown-Text" text="Tên NXB" />
+            <Label layoutX="32.0" layoutY="27.0" styleClass="Label-Brown-Text" text="Mã NXB" />
+            <Button fx:id="ButtonIn_ThemNXB" layoutX="36.0" layoutY="231.0" mnemonicParsing="false" onMouseClicked="#ThemNXB" prefHeight="50.0" prefWidth="87.0" style="-fx-background-color: #682d2d;" text="Thêm" />
+            <Label layoutX="41.0" layoutY="135.0" styleClass="Label-Brown-Text" text="Email" />
+            <TextField fx:id="NhapNXB_EmailNXB" layoutX="134.0" layoutY="123.0" prefHeight="35.0" prefWidth="132.0" promptText="Email" />
+            <TextField fx:id="NhapNXB_SDT" layoutX="134.0" layoutY="176.0" prefHeight="35.0" prefWidth="132.0" promptText="SDT" />
+            <Label layoutX="41.0" layoutY="186.0" styleClass="Label-Brown-Text" text="SDT" />
+            <Button fx:id="ButtonIn_SuaNXB" layoutX="165.0" layoutY="231.0" mnemonicParsing="false" onMouseClicked="#SuaNXB" prefHeight="50.0" prefWidth="87.0" style="-fx-background-color: #682d2d;" text="Sửa" />
+         </children>
+      </Pane>
+      <TableView fx:id="BangNXB" layoutX="333.0" layoutY="25.0" onMouseClicked="#ChonNXB_TTCT" prefHeight="325.0" prefWidth="526.0">
+         <columns>
+            <TableColumn fx:id="c_MaNXB" prefWidth="103.20001220703125" text="Mã NXB" />
+            <TableColumn fx:id="c_TenNXB" prefWidth="140.79995727539062" text="Tên NXB" />
+            <TableColumn fx:id="c_Email" prefWidth="161.5999755859375" text="Email" />
+            <TableColumn fx:id="c_SDT" prefWidth="133.5999755859375" text="SDT" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,33 @@
+.button{
+    -fx-background-color: #DFD9D4;
+}
+
+.button: hover{
+       -fx-background-color: linear-gradient(from 0% 0% to 100% 50%, rgba(25, 118, 210, 0.5), rgba(81, 45, 168, 0.5));
+        -fx-border-color: #DFD9D4;
+        -fx-border-width: 1px 1px 1px 1px;
+        -fx-border-radius: 10px;
+        -fx-background-radius: 10px;
+        -fx-border-style: solid;
+}
+
+.body_right{
+    -fx-background-color: red;
+}
+
+.body_above{
+    -fx-background-color: lightblue;
+}
+
+.menu{
+    -fx-background-color: #DFD9D4;
+}
+
+.pane{
+    -fx-backGround-color: rgba(255, 255, 255, .15);
+        -fx-border-color: rgba(255, 255, 255, .15);
+        -fx-border-width: 1px 1px 1px 1px;
+        -fx-border-radius: 10px;
+        -fx-background-radius: 10px;
+        -fx-border-style: solid;
+}

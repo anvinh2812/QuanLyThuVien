@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1300.0" stylesheets="@../Interface/TrangChu.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainTrung.Controller2">
+   <children>
+      <VBox prefHeight="750.0" prefWidth="78.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <AnchorPane fx:id="side_anchorpane" prefHeight="750.0" prefWidth="78.0" styleClass="menu" stylesheets="@../Interface/TrangChu.css">
+               <children>
+                  <Button layoutX="2.0" layoutY="142.0" mnemonicParsing="false" onAction="#HomeUser" prefHeight="50.0" prefWidth="59.0" styleClass="button1" stylesheets="@../Interface/TrangChu.css">
+                     <graphic>
+                        <ImageView fitHeight="51.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Image/img/Screenshot_2023-05-13_145216-removebg-preview.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="2.0" layoutY="293.0" mnemonicParsing="false" onAction="#Books" prefHeight="50.0" prefWidth="59.0" styleClass="button1" stylesheets="@../Interface/TrangChu.css">
+                     <graphic>
+                        <ImageView fitHeight="51.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Image/img/Screenshot_2023-05-13_145857-removebg-preview.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="2.0" layoutY="215.0" mnemonicParsing="false" onAction="#Account" prefHeight="50.0" prefWidth="51.0" styleClass="button1" stylesheets="@../Interface/TrangChu.css">
+                     <graphic>
+                        <ImageView fitHeight="51.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Image/img/Screenshot_2023-05-13_145157-removebg-preview.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="2.0" layoutY="659.0" mnemonicParsing="false" onAction="#LogOut" prefHeight="50.0" prefWidth="50.0" styleClass="button1" stylesheets="@../Interface/TrangChu.css">
+                     <graphic>
+                        <ImageView fitHeight="51.0" fitWidth="43.0" onDragDetected="#LogOut" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Image/img/Screenshot_2023-05-17_161916-removebg-preview.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="2.0" layoutY="375.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="51.0" styleClass="button1" stylesheets="@../Interface/TrangChu.css">
+                     <graphic>
+                        <ImageView fitHeight="51.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Image/img/Screenshot_2023-06-02_152323-removebg-preview.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <TabPane layoutX="63.0" layoutY="-3.0" prefHeight="755.0" prefWidth="1238.0">
+         <tabs>
+            <Tab text="Thống kê sách mượn">
+               <content>
+                  <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="726.0" prefWidth="1238.0" styleClass="bgThongKeSach" stylesheets="@ThongKeSach.css">
+                     <children>
+                        <AnchorPane layoutX="32.0" layoutY="14.0" prefHeight="52.0" prefWidth="1170.0" styleClass="bg" stylesheets="@ThongKeSach.css">
+                           <children>
+                              <Label layoutX="431.0" layoutY="3.0" prefHeight="46.0" prefWidth="307.0" text="Thống kê Sách Mượn " textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="30.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="32.0" layoutY="72.0" prefHeight="643.0" prefWidth="1171.0" styleClass="bg" stylesheets="@ThongKeSach.css">
+                           <children>
+                              <Label layoutX="14.0" layoutY="33.0" prefHeight="35.0" prefWidth="560.0" text="1. Những mã sách được mượn nhiều nhất trong tháng" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="329.0" prefHeight="18.0" prefWidth="638.0" text="2. Những mã sách được mượn ít nhất trong tháng" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Button layoutX="869.0" layoutY="36.0" mnemonicParsing="false" onMouseClicked="#HienThiMuonMax" prefHeight="26.0" prefWidth="66.0" styleClass="butn" stylesheets="@ThongKeSach.css" text="Check" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="14.0" />
+                                 </font>
+                              </Button>
+                              <TableView fx:id="tableMuon_max" layoutX="32.0" layoutY="94.0" prefHeight="200.0" prefWidth="1094.0" styleClass="container" stylesheets="@ThongKeSach.css">
+                                 <columns>
+                                    <TableColumn fx:id="cMaSachMuon_max" prefWidth="53.5999755859375" text="Mã sách" />
+                                    <TableColumn fx:id="cTenSachMuon_max" prefWidth="226.3999786376953" text="Tên sách" />
+                                    <TableColumn fx:id="cTheLoaiMuon_max" prefWidth="178.39996337890625" text="Thể loại" />
+                                    <TableColumn fx:id="cMaTacGiaMuon_max" prefWidth="114.4000244140625" text="Tác giả" />
+                                    <TableColumn fx:id="cMaNXBMuon_max" prefWidth="195.199951171875" text="Nhà xuất bản" />
+                                    <TableColumn fx:id="cNamXB_max" prefWidth="165.60003662109375" text="Năm xuất bản" />
+                                    <TableColumn fx:id="cLuotMuon_max" prefWidth="158.39990234375" text="Lượt mượn" />
+                                 </columns>
+                              </TableView>
+                              <Button layoutX="872.0" layoutY="328.0" mnemonicParsing="false" onMouseClicked="#HienThiMuonMin" prefHeight="26.0" prefWidth="66.0" styleClass="butn" stylesheets="@ThongKeSach.css" text="Check" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="14.0" />
+                                 </font>
+                              </Button>
+                              <TableView fx:id="tableMuon_min" layoutX="32.0" layoutY="407.0" prefHeight="200.0" prefWidth="1096.0" styleClass="container" stylesheets="@ThongKeSach.css">
+                                 <columns>
+                                    <TableColumn fx:id="cMaSachMuon_min" prefWidth="53.5999755859375" text="Mã sách" />
+                                    <TableColumn fx:id="cTenSachMuon_min" prefWidth="226.3999786376953" text="Tên sách" />
+                                    <TableColumn fx:id="cTheLoaiMuon_min" prefWidth="178.39996337890625" text="Thể loại" />
+                                    <TableColumn fx:id="cMaTacGiaMuon_min" prefWidth="114.4000244140625" text="Tác giả" />
+                                    <TableColumn fx:id="cMaNXBMuon_min" prefWidth="195.199951171875" text="Nhà xuất bản" />
+                                    <TableColumn fx:id="cNamXB_min" prefWidth="171.99993896484375" text="Năm xuất bản" />
+                                    <TableColumn fx:id="cLuotMuon_min" prefWidth="154.4000244140625" text="Lượt mượn" />
+                                 </columns>
+                              </TableView>
+                              <ComboBox fx:id="comboBoxThang" layoutX="479.0" layoutY="37.0" prefHeight="26.0" prefWidth="72.0" />
+                              <ComboBox fx:id="comboBoxThang2" layoutX="464.0" layoutY="329.0" prefHeight="26.0" prefWidth="72.0" />
+                              <Label layoutX="563.0" layoutY="37.0" text="là:" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="563.0" layoutY="329.0" text="là:" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Thống kê độc giả và phiếu mượn mượn sách">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="726.0" prefWidth="1183.0" styleClass="bgThongKeSach" stylesheets="@ThongKeSach.css">
+                     <children>
+                        <AnchorPane layoutX="32.0" layoutY="72.0" prefHeight="646.0" prefWidth="1170.0" styleClass="bg" stylesheets="@ThongKeSach.css">
+                           <children>
+                              <Label layoutX="14.0" layoutY="38.0" text="3. Độc giả thường xuyên mượn sách:" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Button layoutX="614.0" layoutY="39.0" mnemonicParsing="false" onMouseClicked="#HienThiDocGiaMuon" prefHeight="26.0" prefWidth="66.0" styleClass="butn" stylesheets="@ThongKeSach.css" text="Check" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                              <TableView fx:id="tableDocGiaMuonNhieu" layoutX="34.0" layoutY="106.0" prefHeight="200.0" prefWidth="1085.0" styleClass="container" stylesheets="@ThongKeSach.css">
+                                 <columns>
+                                    <TableColumn fx:id="cMaDocGia_muonNhieu" prefWidth="80.79997253417969" text="Mã độc giả" />
+                                    <TableColumn fx:id="cTenDocGia_muonNhieu" prefWidth="284.80003356933594" text="Tên độc giả" />
+                                    <TableColumn fx:id="cSDT_muonNhieu" prefWidth="126.39996337890625" text="SĐT" />
+                                    <TableColumn fx:id="cSoThe_muonNhieu" prefWidth="103.199951171875" text="Số thẻ" />
+                                    <TableColumn fx:id="cEmail_muonNhieu" prefWidth="218.4000244140625" text="Email" />
+                                    <TableColumn fx:id="cGioiTinh_muonNhieu" prefWidth="129.60003662109375" text="Giới tính" />
+                                    <TableColumn fx:id="cLuotMuon_muonNhieu" prefWidth="140.7999267578125" text="Lượt mượn" />
+                                 </columns>
+                              </TableView>
+                              <Label layoutX="14.0" layoutY="371.0" prefHeight="27.0" prefWidth="438.0" text="4. Số phiếu mượn sách được mượn trong 1 năm là: " textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Button layoutX="614.0" layoutY="370.0" mnemonicParsing="false" onMouseClicked="#hienThiTongSoPhieuMuon" prefHeight="26.0" prefWidth="66.0" styleClass="butn" stylesheets="@ThongKeSach.css" text="Check" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                              <Label fx:id="soPhieuLabel" layoutX="485.0" layoutY="371.0" prefHeight="27.0" prefWidth="83.0" text="Số phiếu" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="32.0" layoutY="14.0" prefHeight="52.0" prefWidth="1169.0" styleClass="bg" stylesheets="@ThongKeSach.css">
+                           <children>
+                              <Label layoutX="345.0" layoutY="3.0" prefHeight="46.0" prefWidth="480.0" text="Thống kê Độc giả và Phiếu mượn" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="30.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

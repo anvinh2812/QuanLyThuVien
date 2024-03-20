@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="359.0" prefWidth="713.0" styleClass="backGround" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="QuanLyThuVien.QuanLyThuVien.TheLoaiController">
+   <children>
+      <TableView fx:id="BangTheLoai" layoutX="363.0" layoutY="28.0" onMouseClicked="#ChonNXB_TTCT" prefHeight="297.0" prefWidth="326.0">
+         <columns>
+            <TableColumn fx:id="cr_MaTheLoai" prefWidth="135.99999618530273" text="Mã Thể Loại" />
+            <TableColumn fx:id="cr_TenTheLoai" prefWidth="189.6000518798828" text="Tên Thể Loại" />
+         </columns>
+      </TableView>
+      <Pane layoutX="28.0" layoutY="32.0" prefHeight="290.0" prefWidth="312.0" styleClass="container">
+         <children>
+            <TextField fx:id="NhapTheLoai_MaTheLoai" layoutX="160.0" layoutY="46.0" prefHeight="32.0" prefWidth="136.0" promptText="Mã Thể Loại" />
+            <TextField fx:id="NhapTheLoai_TenTheLoai" layoutX="161.0" layoutY="106.0" prefHeight="32.0" prefWidth="136.0" promptText="Tên Thể Loại" />
+            <Label layoutX="46.0" layoutY="53.0" styleClass="Label-Brown-Text" text="Mã Thể Loại" textFill="#682d2d" />
+            <Label layoutX="42.0" layoutY="113.0" styleClass="Label-Brown-Text" text="Tên Thể Loại" textFill="#682d2d" />
+            <Button fx:id="BTN_ThemTheLoai" layoutX="39.0" layoutY="187.0" mnemonicParsing="false" onMouseClicked="#ThemTheLoai" prefHeight="51.0" prefWidth="89.0" style="-fx-background-color: #682d2d;" text="Thêm" />
+            <Button fx:id="BTN_SuaTheLoai" layoutX="186.0" layoutY="188.0" mnemonicParsing="false" onMouseClicked="#SuaTheLoai" prefHeight="51.0" prefWidth="89.0" style="-fx-background-color: #682d2d;" text="Sửa" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

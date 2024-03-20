@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Card_Box" prefHeight="120.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="QuanLyThuVien.QuanLyThuVien.CardController">
+   <children>
+      <ImageView fx:id="Card_IMG" fitHeight="73.0" fitWidth="47.0" layoutX="25.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" scaleX="1.7" scaleY="1.5" scaleZ="1.5">
+         <image>
+            <Image url="@../IMG/p1.jpg" />
+         </image>
+      </ImageView>
+      <VBox layoutX="101.0" prefHeight="120.0" prefWidth="145.0">
+         <children>
+            <Label fx:id="Card_TenSach" prefHeight="153.0" prefWidth="163.0" styleClass="Label-Mini-Content" stylesheets="@Style.css" text="SERAPHINE" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="Card_TenTacGia" prefHeight="55.0" prefWidth="164.0" styleClass="Label-Mini-Content" stylesheets="@Style.css" text="Rachel Hartman" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="Card_DanhGia" fitHeight="34.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true" scaleX="1.5">
+               <image>
+                  <Image url="@../IMG/5star-removebg-preview.png" />
+               </image>
+               <VBox.margin>
+                  <Insets left="30.0" />
+               </VBox.margin>
+            </ImageView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

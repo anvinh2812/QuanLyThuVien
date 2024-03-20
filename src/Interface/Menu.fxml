@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1300.0" stylesheets="@TrangChu.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Interface.Menu">
+   <children>
+      <VBox prefHeight="736.0" prefWidth="62.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <AnchorPane fx:id="side_anchorpane" prefHeight="736.0" prefWidth="53.0" styleClass="menu" stylesheets="@TrangChu.css">
+               <children>
+                  <Button layoutX="2.0" layoutY="135.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="59.0" styleClass="button1" stylesheets="@TrangChu.css">
+                     <graphic>
+                        <ImageView fitHeight="51.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Image/img/Screenshot_2023-05-13_145216-removebg-preview.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="2.0" layoutY="293.0" mnemonicParsing="false" onAction="#Books" prefHeight="50.0" prefWidth="59.0" styleClass="button1" stylesheets="@TrangChu.css">
+                     <graphic>
+                        <ImageView fitHeight="51.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Image/img/Screenshot_2023-05-13_145857-removebg-preview.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="2.0" layoutY="215.0" mnemonicParsing="false" onAction="#ViewProfie" prefHeight="50.0" prefWidth="51.0" styleClass="button1" stylesheets="@TrangChu.css">
+                     <graphic>
+                        <ImageView fitHeight="51.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Image/img/Screenshot_2023-05-13_145157-removebg-preview.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="2.0" layoutY="659.0" mnemonicParsing="false" onAction="#LogOut" prefHeight="50.0" prefWidth="50.0" styleClass="button1" stylesheets="@TrangChu.css">
+                     <graphic>
+                        <ImageView fitHeight="51.0" fitWidth="43.0" onDragDetected="#LogOut" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Image/img/Screenshot_2023-05-17_161916-removebg-preview.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <StackPane layoutX="65.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="736.0" prefWidth="1235.0">
+         <children>
+            <TabPane prefHeight="740.0" prefWidth="960.0" tabClosingPolicy="UNAVAILABLE">
+               <tabs>
+                  <Tab fx:id="tab1" text="Home">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="610.0" prefWidth="905.0" styleClass="backGround" stylesheets="@../MainPhuc/main/qltv/styles.css">
+                           <children>
+                              <VBox layoutX="35.0" layoutY="20.0" prefHeight="666.0" prefWidth="1185.0">
+                                 <children>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="94.0" prefWidth="1185.0" styleClass="container" stylesheets="@../MainPhuc/main/qltv/styles.css" text="Báo cáo + Biểu đồ" textFill="#fffbfb">
+                                       <font>
+                                          <Font name="System Bold Italic" size="40.0" />
+                                       </font>
+                                    </Label>
+                                    <Pane prefHeight="571.0" prefWidth="1186.0">
+                                       <children>
+                                          <Label fx:id="Tongnvien" alignment="BOTTOM_RIGHT" layoutX="263.0" layoutY="149.0" prefHeight="40.0" prefWidth="96.0" text="||||||||||" textFill="#eaeaea">
+                                             <font>
+                                                <Font name="System Bold" size="28.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER" contentDisplay="CENTER" layoutX="245.0" layoutY="96.0" prefHeight="37.0" prefWidth="169.0" stylesheets="@../MainPhuc/main/qltv/styles.css" text="Tổng số nhân viên" textFill="#fffbfb">
+                                             <font>
+                                                <Font name="System Bold" size="19.0" />
+                                             </font>
+                                          </Label>
+                                          <ImageView fitHeight="164.0" fitWidth="159.0" layoutX="68.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../MainPhuc/ThongKe/anh/staff.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="TongSoSachSauKhiMuon" layoutX="263.0" layoutY="429.0" prefHeight="45.0" prefWidth="117.0" text="||||||||||" textFill="#fffcfc">
+                                             <font>
+                                                <Font name="System Bold" size="28.0" />
+                                             </font>
+                                          </Label>
+                                          <ImageView fitHeight="119.0" fitWidth="133.0" layoutX="92.0" layoutY="362.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../MainPhuc/ThongKe/anh/open-book.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label alignment="CENTER" contentDisplay="CENTER" layoutX="219.0" layoutY="385.0" prefHeight="37.0" prefWidth="169.0" stylesheets="@../MainPhuc/main/qltv/styles.css" text="Tổng số sách" textFill="#fffbfb">
+                                             <font>
+                                                <Font name="System Bold" size="19.0" />
+                                             </font>
+                                          </Label>
+                                          <ImageView fitHeight="120.0" fitWidth="145.0" layoutX="733.0" layoutY="94.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../MainPhuc/ThongKe/anh/children.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label alignment="CENTER" contentDisplay="CENTER" layoutX="888.0" layoutY="96.0" prefHeight="37.0" prefWidth="169.0" stylesheets="@../MainPhuc/main/qltv/styles.css" text="Tổng số độc giả" textFill="#fffbfb">
+                                             <font>
+                                                <Font name="System Bold" size="19.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="TongDG" alignment="BOTTOM_RIGHT" layoutX="930.0" layoutY="149.0" prefHeight="40.0" prefWidth="98.0" text="||||||||||" textFill="#eaeaea">
+                                             <font>
+                                                <Font name="System Bold" size="28.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER" contentDisplay="CENTER" layoutX="867.0" layoutY="366.0" prefHeight="37.0" prefWidth="209.0" stylesheets="@../MainPhuc/main/qltv/styles.css" text="Tổng số Nhà Xuất Bản" textFill="#fffbfb">
+                                             <font>
+                                                <Font name="System Bold" size="19.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="TongNXB" alignment="BOTTOM_RIGHT" layoutX="915.0" layoutY="421.0" prefHeight="40.0" prefWidth="113.0" text="||||||||||" textFill="#eaeaea">
+                                             <font>
+                                                <Font name="System Bold" size="28.0" />
+                                             </font>
+                                          </Label>
+                                          <ImageView fitHeight="127.0" fitWidth="122.0" layoutX="718.0" layoutY="360.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../MainPhuc/ThongKe/anh/publishing.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab fx:id="tab12" text="Số lượng sách còn lại sau khi mượn">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="514.0" prefWidth="814.0" styleClass="backGround" stylesheets="@../MainPhuc/main/qltv/styles.css">
+                           <children>
+                              <VBox layoutX="-1.0" layoutY="1.0" prefHeight="706.0" prefWidth="1235.0">
+                                 <children>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="94.0" prefWidth="1238.0" styleClass="container" stylesheets="@../MainPhuc/main/qltv/styles.css" text=" Số Lượng Sách còn lại sau khi mượn" textFill="#fffbfb">
+                                       <font>
+                                          <Font name="System Bold Italic" size="40.0" />
+                                       </font>
+                                    </Label>
+                                    <LineChart fx:id="linechart" legendSide="TOP" legendVisible="false" prefHeight="578.0" prefWidth="1217.0" stylesheets="@../MainPhuc/main/qltv/styles.css">
+                                       <xAxis>
+                                          <CategoryAxis side="BOTTOM" />
+                                       </xAxis>
+                                       <yAxis>
+                                          <NumberAxis side="LEFT" />
+                                       </yAxis>
+                                    </LineChart>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab fx:id="tab11" text="Số lượng sách mượn theo thể loại">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TextField layoutX="226.0" layoutY="51.0" />
+                              <TextField layoutX="226.0" layoutY="89.0" />
+                              <TextField layoutX="226.0" layoutY="129.0" />
+                              <Button layoutX="275.0" layoutY="173.0" mnemonicParsing="false" text="Button" />
+                              <Label layoutX="156.0" layoutY="55.0" text="Label" />
+                              <Label layoutX="156.0" layoutY="93.0" text="Label" />
+                              <Label layoutX="156.0" layoutY="133.0" text="Label" />
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="708.0" prefWidth="1235.0" styleClass="backGround" stylesheets="@../MainPhuc/main/qltv/styles.css">
+                                 <children>
+                                    <HBox layoutX="-4.0" prefHeight="94.0" prefWidth="1235.0" styleClass="container" stylesheets="@../MainPhuc/main/qltv/styles.css">
+                                       <children>
+                                          <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="94.0" prefWidth="1236.0" text="Số Sách Mượn Theo Thể Loại" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold Italic" size="40.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <PieChart fx:id="piechartSoSach" labelLineLength="12.0" layoutX="-3.0" layoutY="94.0" prefHeight="610.0" prefWidth="1235.0" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab fx:id="tab2" text="Số lượng sách được mượn nhiều nhất">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="backGround" stylesheets="@../MainPhuc/main/qltv/styles.css">
+                           <children>
+                              <VBox layoutX="819.0" layoutY="11.0" prefHeight="177.0" prefWidth="322.0">
+                                 <children>
+                                    <TableView fx:id="tableSachMuonNhieuNhat" prefHeight="172.0" prefWidth="334.0" styleClass="container" stylesheets="@../MainPhuc/main/qltv/styles.css">
+                                       <columns>
+                                          <TableColumn fx:id="cotTenSach" minWidth="-Infinity" prefWidth="150.0" text="Tên sách" />
+                                          <TableColumn fx:id="cotTongSoLuotMuon" minWidth="-Infinity" prefWidth="130.0" text="Tổng số lượt mượn" />
+                                       </columns>
+                                    </TableView>
+                                 </children>
+                              </VBox>
+                              <HBox layoutX="142.0" layoutY="40.0" prefHeight="119.0" prefWidth="387.0" stylesheets="@../MainPhuc/main/qltv/styles.css">
+                                 <children>
+                                    <Label alignment="TOP_CENTER" contentDisplay="CENTER" prefHeight="119.0" prefWidth="709.0" stylesheets="@../MainPhuc/main/qltv/styles.css" text="Sách được mượn nhiều nhất" textFill="#eaeaea">
+                                       <font>
+                                          <Font name="System Bold Italic" size="27.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <Label alignment="CENTER" layoutX="161.0" layoutY="214.0" prefHeight="90.0" prefWidth="350.0" stylesheets="@../MainPhuc/main/qltv/styles.css" text="Tổng số sách mượn" textFill="#f2f2f2">
+                                 <font>
+                                    <Font name="System Bold Italic" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="805.0" layoutY="214.0" prefHeight="90.0" prefWidth="350.0" stylesheets="@../MainPhuc/main/qltv/styles.css" text="Tổng số sách đã trả" textFill="#f2f2f2">
+                                 <font>
+                                    <Font name="System Bold Italic" size="20.0" />
+                                 </font>
+                              </Label>
+                              <TableView fx:id="tableSachDangMuon" layoutX="77.0" layoutY="319.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="368.0" prefWidth="519.0">
+                                 <columns>
+                                    <TableColumn fx:id="cotTenSach_dangmuon" prefWidth="110.0" text="Tên Sách" />
+                                    <TableColumn fx:id="cotSach_dangmuon" prefWidth="110.0" text="Sách đang mượn" />
+                                 </columns>
+                              </TableView>
+                              <TableView fx:id="tableSachDaTra" layoutX="749.0" layoutY="322.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="362.0" prefWidth="438.0">
+                                 <columns>
+                                    <TableColumn fx:id="cotTenSach_datra" prefWidth="110.0" text="Tên Sách" />
+                                    <TableColumn fx:id="cotSach_datra" prefWidth="120.0" text="Sách đã trả" />
+                                 </columns>
+                              </TableView>
+                              <Separator layoutX="-2.0" layoutY="192.0" prefHeight="4.0" prefWidth="1235.0" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab fx:id="tab3" text="Số lượng sách theo Tác Giả">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="backGround" stylesheets="@../MainPhuc/main/qltv/styles.css">
+                           <children>
+                              <AnchorPane layoutX="1.0" layoutY="2.0" prefHeight="709.0" prefWidth="1235.0">
+                                 <children>
+                                    <BarChart fx:id="barchart" layoutX="46.0" layoutY="112.0" legendVisible="false" prefHeight="578.0" prefWidth="1124.0" stylesheets="@../MainPhuc/main/qltv/styles.css">
+                                       <xAxis>
+                                          <CategoryAxis side="BOTTOM" />
+                                       </xAxis>
+                                       <yAxis>
+                                          <NumberAxis side="LEFT" />
+                                       </yAxis>
+                                       <styleClass>
+                                          <String fx:value="chart-series-line" />
+                                          <String fx:value="axis" />
+                                       </styleClass>
+                                    </BarChart>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="80.0" layoutY="8.0" prefHeight="94.0" prefWidth="1076.0" styleClass="container" stylesheets="@../MainPhuc/main/qltv/styles.css" text=" Số Lượng sách theo Tác Giả" textFill="#fffbfb">
+                                       <font>
+                                          <Font name="System Bold Italic" size="40.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab fx:id="tab31" text="Số lượng sách Theo NXB ">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="backGround" stylesheets="@../MainPhuc/main/qltv/styles.css">
+                           <children>
+                              <AnchorPane layoutX="1.0" layoutY="2.0" prefHeight="706.0" prefWidth="1235.0">
+                                 <children>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="76.0" layoutY="14.0" prefHeight="94.0" prefWidth="1100.0" styleClass="container" stylesheets="@../MainPhuc/main/qltv/styles.css" text=" Số Lượng Sách theo Nhà xuất bản" textFill="#fffbfb">
+                                       <font>
+                                          <Font name="System Bold Italic" size="40.0" />
+                                       </font>
+                                    </Label>
+                                    <BarChart fx:id="barchart_NXB" layoutX="38.0" layoutY="101.0" legendVisible="false" prefHeight="586.0" prefWidth="1144.0" stylesheets="@../MainPhuc/main/qltv/styles.css">
+                                       <xAxis>
+                                          <CategoryAxis side="BOTTOM" />
+                                       </xAxis>
+                                       <yAxis>
+                                          <NumberAxis side="LEFT" />
+                                       </yAxis>
+                                    </BarChart>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab fx:id="tab311" text="Số trang từng quyển Sách">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="backGround" stylesheets="@../MainPhuc/main/qltv/styles.css">
+                           <children>
+                              <AnchorPane layoutX="1.0" layoutY="2.0" prefHeight="710.0" prefWidth="1235.0">
+                                 <children>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="7.0" prefHeight="94.0" prefWidth="1088.0" styleClass="container" stylesheets="@../MainPhuc/main/qltv/styles.css" text="Số trang theo từng quyển Sách" textFill="#fffbfb">
+                                       <font>
+                                          <Font name="System Bold Italic" size="40.0" />
+                                       </font>
+                                    </Label>
+                                    <AreaChart fx:id="areachart" layoutX="44.0" layoutY="101.0" legendVisible="false" prefHeight="590.0" prefWidth="1138.0" stylesheets="@../MainPhuc/main/qltv/styles.css">
+                                       <xAxis>
+                                          <CategoryAxis side="BOTTOM" />
+                                       </xAxis>
+                                       <yAxis>
+                                          <NumberAxis side="LEFT" />
+                                       </yAxis>
+                                    </AreaChart>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+               </tabs>
+            </TabPane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

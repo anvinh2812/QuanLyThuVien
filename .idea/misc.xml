@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="EntryPointsManager">
+    <entry_points version="2.0">
+      <entry_point TYPE="field" FQNAME="Home.Trung.Employee MaSach" />
+      <entry_point TYPE="field" FQNAME="Home.Trung.Employee NamXuatBan" />
+      <entry_point TYPE="field" FQNAME="Home.Trung.Employee NhaXuatBan" />
+      <entry_point TYPE="field" FQNAME="Home.Trung.Employee TacGia" />
+      <entry_point TYPE="field" FQNAME="Home.Trung.Employee TenSach" />
+      <entry_point TYPE="field" FQNAME="Home.Trung.Employee TheLoai" />
+    </entry_points>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_18" default="true" project-jdk-name="18" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
